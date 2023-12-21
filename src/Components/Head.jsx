@@ -13,7 +13,7 @@ function Head({ setSearchData }) {
         <div className="head">
           <div id="title">
             <h1>Kalvium</h1>
-            <h1>Books</h1>
+            {/* <h1>Books</h1> */}
           </div>
         </div>
         <div className="search-bar">

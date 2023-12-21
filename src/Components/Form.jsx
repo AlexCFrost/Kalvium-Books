@@ -19,8 +19,8 @@ function Form() {
       <form onSubmit={handleSubmit(onSubmit)}>
         {submitted && <p>Form submitted successfully!</p>}
         <div>
-          <label>First Name</label>
-          <input {...register('full Name', { required: true })} placeholder="Enter Your Name" />
+          <label>Full Name</label>
+          <input {...register('fullName', { required: true })} placeholder="Enter Your Name" />
         </div>
 
         <div>
