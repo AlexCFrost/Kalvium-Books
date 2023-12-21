@@ -104,7 +104,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Adjust this value based on your layout */
+  height: 100vh;
 }
 
 form {
@@ -115,7 +115,7 @@ form {
 }
 
 form p {
-  color: green; /* Change the color as needed */
+  color: green;
 }
 
 form div {
