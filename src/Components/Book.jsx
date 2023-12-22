@@ -30,12 +30,17 @@ function Book() {
   return (
     <div className="container">
       {error && <p className="error">Error: {error}</p>}
+      <div>
       <Head setSearchData={setSearchData} />
+      </div>
       {(searchData ? filterBooks : books).map((book) => (
         <div key={book.id} className="book">
           <h1>{book.title}</h1>
           <img src={book.imageLinks.thumbnail} alt={book.title} />
-          <p>Authors: {book.authors.join(', ')}</p>
+          <div className='ptag'>
+          <p>{book.averageRating? book.averageRating: '4'}&#9733;</p>
+          <p>Free</p>
+          </div>
         </div>
       ))}
     </div>

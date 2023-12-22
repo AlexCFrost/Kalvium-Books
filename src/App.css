@@ -7,14 +7,16 @@
 
 #Cont{
   display:flex;
-  justify-content:space-between;
+  flex-direction: row;
+  justify-content:space-around;
+  margin-left: 150px;
+  margin-bottom: 20px;
 }
 
 .head{
   display: flex;
   flex-direction:row;
   justify-content: center;
-  align-items: center;
   padding: 20px;
 }
 
@@ -60,11 +62,10 @@
 
 /* For Books */
 .container {
-  margin: 0 auto;
-  padding: 20px;
   display: flex;
-  flex-wrap: wrap; 
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row; 
+  margin-left: 50px;
 }
 
 .book {
@@ -96,6 +97,12 @@
 .book p {
   font-size: 16px;
   margin: 0;
+}
+
+.ptag{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* For Form */
